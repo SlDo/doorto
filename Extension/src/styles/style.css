@@ -1,0 +1,80 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.popup {
+  background: #273469;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+.button, .input {
+  outline: none;
+  min-height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #E4D9FF;
+  color: #273469;
+  border: none;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.buttonSecondary {
+  background: none;
+  border: 1px solid #E4D9FF;
+  color: #E4D9FF;
+}
+
+.buttonSecondary:hover {
+  border: 1px solid #1E2749;
+}
+
+.button:hover {
+  background-color: #1E2749;
+  color: #E4D9FF;
+}
+
+.input {
+  border: 1px solid #E4D9FF;
+  background: none;
+  padding-left: 1rem;
+  color: #E4D9FF;
+}
+
+.input:focus {
+  border-color: #1E2749;
+}
+
+.input::placeholder {
+  color: #FFFFFF;
+}
+
+.sessionForm .input, .sessionForm .button {
+  width: 100%;
+}
+
+.sessionForm > .field:not(:first-child) {
+  margin-top: 15px;
+}
+
+.sessionID {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 75px;
+  font-weight: bold;
+  color: #E4D9FF;
+  border: 2px dashed #E4D9FF;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
